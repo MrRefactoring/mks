@@ -1,0 +1,41 @@
+{
+  "name": "mks",
+  "version": "0.1.0",
+  "description": "",
+  "main": "out/index.js",
+  "types": "out/index.d.ts",
+  "author": "Vladislav Tupikin <mrrefactoring@yandex.ru>",
+  "repository": "git+https://github.com/MrRefactoring/mks.git",
+  "license": "MIT",
+  "keywords": [],
+  "ava": {
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "",
+    "test": "ava tests/mks.test.ts",
+    "lint": "eslint --ext .ts src tests",
+    "lint:fix": "npm run lint -- --fix",
+    "t": "ts-node t.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.11",
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.5.0",
+    "ava": "^3.15.0",
+    "eslint": "^8.3.0",
+    "eslint-config-airbnb": "^19.0.1",
+    "eslint-config-airbnb-typescript": "^16.1.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.25.3",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {}
+}
